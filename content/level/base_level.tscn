@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://b0kh13g8eywkh"]
+
+[ext_resource type="Texture2D" uid="uid://divxekwha1irh" path="res://asset/bg.png" id="1_3qnat"]
+[ext_resource type="PackedScene" uid="uid://ck0gyc8dmduf4" path="res://content/projectile/peppa_projectile.tscn" id="2_s4ovg"]
+
+[node name="LevelBase" type="Node2D"]
+
+[node name="Bg" type="Sprite2D" parent="."]
+texture_repeat = 2
+position = Vector2(497.46, 258.92)
+scale = Vector2(4.07453, 2.13344)
+texture = ExtResource("1_3qnat")
+metadata/_edit_lock_ = true
+
+[node name="PeppaProjectile" parent="." instance=ExtResource("2_s4ovg")]
+position = Vector2(81, 410)
+rotation = 0.356797

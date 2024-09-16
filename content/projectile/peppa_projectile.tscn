@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://ck0gyc8dmduf4"]
+
+[ext_resource type="PackedScene" uid="uid://v7vs1lfrpwhl" path="res://content/projectile/base_projectile.tscn" id="1_s3k16"]
+[ext_resource type="Texture2D" uid="uid://bnos6f0mf1wu0" path="res://asset/personnage/Peppa.webp" id="2_a0buq"]
+
+[node name="PeppaProjectile" instance=ExtResource("1_s3k16")]
+
+[node name="CollisionShape2D" parent="." index="0"]
+position = Vector2(0, 0)
+
+[node name="Icon" parent="CollisionShape2D" index="0"]
+position = Vector2(1.5, -5.80392)
+scale = Vector2(0.107, 0.115392)
+texture = ExtResource("2_a0buq")
